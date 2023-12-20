@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/jolieAppAdmin/static/css/main.e6c13ad2.css",
+    "main.js": "/jolieAppAdmin/static/js/main.a094c192.js",
+    "static/js/787.7d05b34a.chunk.js": "/jolieAppAdmin/static/js/787.7d05b34a.chunk.js",
+    "index.html": "/jolieAppAdmin/index.html",
+    "main.e6c13ad2.css.map": "/jolieAppAdmin/static/css/main.e6c13ad2.css.map",
+    "main.a094c192.js.map": "/jolieAppAdmin/static/js/main.a094c192.js.map",
+    "787.7d05b34a.chunk.js.map": "/jolieAppAdmin/static/js/787.7d05b34a.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e6c13ad2.css",
+    "static/js/main.a094c192.js"
+  ]
+}
