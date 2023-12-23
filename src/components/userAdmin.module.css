@@ -1,0 +1,60 @@
+.container{
+    margin-top: 5rem;
+    min-height: 100vh;
+    width: 100vw;
+    color: black;
+}
+
+
+
+.tableContainer {
+    max-width: 100%;
+    font-size: 0.7rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 3rem 2rem;
+    overflow-x: scroll;
+  }
+
+#table2{
+  display: none;
+}
+
+.searchBar input[type="text"]{
+  background-color: white;
+  font-size: 20px;
+  color: rgb(0, 0, 0);
+}
+  
+  .userTable {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: white;
+    color: black;
+  }
+  
+  .userTable th,
+  .userTable td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+  }
+  
+  .userTable th {
+    background-color: rgb(255, 151, 91);
+  }
+  
+ 
+  
+  .userTable tbody tr:hover {
+    cursor: pointer;
+    background-color: rgb(252, 197, 145);
+  }
+  
+
+  .hide{
+    display: none;
+  }

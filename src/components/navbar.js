@@ -19,6 +19,7 @@ import ListItemText from '@mui/material/ListItemText';
 import InboxIcon from '@mui/icons-material/MoveToInbox';
 import MailIcon from '@mui/icons-material/Mail';
 import AccountCircleIcon from '@mui/icons-material/AccountCircle';
+import { useNavigate } from 'react-router-dom';
 
 
 const drawerWidth = 240;
@@ -69,10 +70,19 @@ const DrawerHeader = styled('div')(({ theme }) => ({
 }));
 
 export default function PersistentDrawerLeft() {
-    const [tab, setTab]=React.useState({'user':true})
     const theme = useTheme();
     const [open, setOpen] = React.useState(false);
+    const navigate=useNavigate()
 
+    React.useEffect(()=>{
+      navigate('/admin/Users')
+    }, [])
+
+    const handleChangeTab=(tabName)=>{
+      console.log(tabName)
+      navigate(`/admin/${tabName}`)
+    }
+    
     const handleDrawerOpen = () => {
         setOpen(true);
     };
@@ -125,7 +135,7 @@ export default function PersistentDrawerLeft() {
             <List>
             {['Users', 'Notification', 'Verification', 'Payments'].map((text, index) => (
                 <ListItem key={text} disablePadding>
-                <ListItemButton>
+                <ListItemButton onClick={()=>handleChangeTab(text)}>
                     <ListItemIcon>
                     {index === 0 ? <AccountCircleIcon/> : <MailIcon />}
                     </ListItemIcon>
@@ -137,7 +147,6 @@ export default function PersistentDrawerLeft() {
             </Drawer>
             <Main open={open}>
                 <DrawerHeader />
-            
             </Main>
         </Box>
     );
